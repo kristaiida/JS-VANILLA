@@ -5,10 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- CSS file -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Javascript file -->
     <script src="js/code.js" defer></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c7e2acf177.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header>
+        <h1>Weather App</h1>
+        <p>Get the weather right where you're at.</p>
+    </header>
     
+    <main>
+        <div class="card">
+            <div class="search">
+                <input type="text" class="searchBox" placeholder="Search">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="weather">
+                <h3>Weather in Oulu</h3>
+                <h2 class="temp">10°C</h2>
+                <div class="descoption">Cloudy</div>
+                <div class="humidity">30%</div>
+                <div class="wind">Wind speed: 4km/h</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
 </html>
