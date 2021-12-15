@@ -3,6 +3,10 @@ html {
     background-color: #EEEE;
 }
 
+.description {
+    text-transform: capitalize;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -23,7 +27,8 @@ header p {
     font-size: 1em;
     margin-top: -.625em;
     text-indent: -2.5em;
-    text-shadow: 0 2px 0px rgba(0, 0, 0, .15);
+    text-shadow: 0 1px 0px rgba(0, 0, 0, .15);
+    color: #254370;
 }
 
 main {
@@ -31,15 +36,15 @@ main {
 }
 
 h3 {
-    text-shadow: 0 2px 0px rgba(0, 0, 0, .15);
+    text-shadow: 0 2px 0px rgba(0, 0, 0, .1);
 }
 
 h2 {
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
 
 .card {
-    background-color: #dbdada;
+    background-color: #f0f0f0d0;
     padding: 2em;
     border-radius: 40px;
     width: 100%;

@@ -7,7 +7,7 @@ let weather = {
     },
     showWeather: function (data) {
         const { name } = data;
-        const { description } = data.weather;
+        const { description } = data.weather[0];
         const { temp, humidity } = data.main;
         const { speed } = data.wind;
         document.querySelector(".city").innerText = "Weather in " + name;
@@ -23,4 +23,10 @@ let weather = {
 
 document.querySelector(".search button").addEventListener("click", function() {
     weather.search();
-})
+});
+
+document.querySelector(".searchBox").addEventListener("keyup", function (event) {
+    if(event.key == "Enter") {
+        weather.search();
+    }
+});
