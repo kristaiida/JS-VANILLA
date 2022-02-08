@@ -1,5 +1,5 @@
 let weather = {
-    "apiKey": "cfad8fec9b2105fafb1fa9ee18e4c2c7",
+    "apiKey": " YOUR API KEY HERE ",
     getWeather: function (city) {
         fetch("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&appid=" + this.apiKey)
         .then((response) => response.json())
@@ -21,7 +21,7 @@ let weather = {
     }
 };
 
-document.querySelector(".search button").addEventListener("click", function() {
+document.querySelector(".searchButton").addEventListener("click", function() {
     weather.search();
 });
 
